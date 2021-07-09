@@ -20,7 +20,7 @@ module.exports = class GintamaCommand extends Command {
   run(message) {
     try {
       const linkArray = fs
-        .readFileSync('././resources/gifs/gintamalinks.txt', 'utf8')
+        .readFileSync('././resources/gifs/sfw/Gintama.txt', 'utf8')
         .split('\n');
       const link = linkArray[Math.floor(Math.random() * linkArray.length)];
       message.channel.send(link);
